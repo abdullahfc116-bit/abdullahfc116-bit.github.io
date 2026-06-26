@@ -79,8 +79,22 @@
 <div class="container">
     <h1>TikTok Download</h1>
     <input type="text" placeholder="ضع رابط الفيديو هنا...">
-    <button onclick="alert('جاري التحميل...')">تحميل الآن</button>
+    </button> 
+    <button onclick="downloadVideo()">تحميل الآن</button>
 </div>
 
-</body>
+</body> 
+<script>
+function downloadVideo() {
+    const url = document.querySelector('input').value;
+    if (url.includes('tiktok.com')) {
+        // رابط API للتحميل
+        const apiUrl = `https://api.tiklydown.eu.org/api/download?url=${encodeURIComponent(url)}`;
+        window.open(apiUrl, '_blank'); 
+    } else {
+        alert("يرجى التأكد من أن الرابط هو رابط فيديو تيك توك");
+    }
+}
+</script>
+
 </html>
