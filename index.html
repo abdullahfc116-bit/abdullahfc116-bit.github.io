@@ -88,12 +88,11 @@
 function downloadVideo() {
     const url = document.querySelector('input').value;
     if (url.includes('tiktok.com')) {
-        // رابط API للتحميل
+        // سيتم فتح رابط التحميل مباشرة دون إظهار أي رسالة
         const apiUrl = `https://api.tiklydown.eu.org/api/download?url=${encodeURIComponent(url)}`;
         window.open(apiUrl, '_blank'); 
-    } else {
-        alert("يرجى التأكد من أن الرابط هو رابط فيديو تيك توك");
     }
+    // قمنا بحذف الـ alert من هنا لكي لا تظهر أي رسالة للمستخدم
 }
 </script>
 
