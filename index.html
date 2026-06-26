@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تحميل تيك توك</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(-45deg, #0f0c29, #302b63, #24243e, #000000);
+            background-size: 400% 400%;
+            animation: gradient 10s ease infinite;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(15px);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.2);
+            text-align: center;
+            width: 85%;
+            max-width: 400px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* العنوان أحمر نيون */
+        h1 { 
+            color: #ff4757; 
+            text-shadow: 0 0 15px #ff4757; 
+            margin-bottom: 25px;
+        }
+        
+        /* مربع العنوان (الإدخال) أخضر نيون */
+        input {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 2px solid #2ed573;
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.3);
+            color: white;
+            box-sizing: border-box;
+            outline: none;
+            box-shadow: 0 0 10px rgba(46, 213, 115, 0.3);
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            background-color: #2ed573;
+            color: black;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 0 15px #2ed573;
+            transition: 0.3s;
+        }
+
+        button:hover { background-color: #7bed9f; box-shadow: 0 0 25px #7bed9f; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>TikTok Download</h1>
+    <input type="text" placeholder="ضع رابط الفيديو هنا...">
+    <button onclick="alert('جاري التحميل...')">تحميل الآن</button>
+</div>
+
+</body>
+</html>
